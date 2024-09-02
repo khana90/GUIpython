@@ -3,6 +3,8 @@ from tkinter import *
 window = Tk()
 window.title("My first GUI program")
 window.minsize(width=500, height=400)
+# added pad x and pad y
+window.config(padx=10, pady=10)
 
 # Label
 my_labl =Label(text="I am a label", font=("Arial", 24))
@@ -10,7 +12,7 @@ my_labl["text"] = "New Text"
 my_labl.config(text= "new text")
 # postion text on top column and row
 my_labl.grid(column=0, row=0) 
-# my_labl.pack()
+my_labl.pack()
 
 # Button
 def button_clicked():
